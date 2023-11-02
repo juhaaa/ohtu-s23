@@ -57,6 +57,5 @@ class TestStatisticsService(unittest.TestCase):
     def test_top_ei_tilastoa(self):
         result = self.stats.top(4, 5)
         
-        # Eniten syöttöjä Gretzky
+        # Palauttaa None jos parametrinä ei ole ENUM
         self.assertEqual(result, None)
-
