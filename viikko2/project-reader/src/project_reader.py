@@ -13,4 +13,9 @@ class ProjectReader:
         parsed = toml.loads(content)
         
         # deserialisoi TOML-formaatissa oleva merkkijono ja muodosta Project-olio sen tietojen perusteella
-        return Project(parsed["tool"]["poetry"]["name"], parsed["tool"]["poetry"]["description"], parsed["tool"]["poetry"]["license"], parsed["tool"]["poetry"]["authors"], parsed["tool"]["poetry"]["dependencies"], parsed["tool"]["poetry"]["group"]["dev"]["dependencies"])
+        return Project(parsed["tool"]["poetry"]["name"],
+                       parsed["tool"]["poetry"]["description"],
+                       parsed["tool"]["poetry"]["license"],
+                       parsed["tool"]["poetry"]["authors"],
+                       parsed["tool"]["poetry"]["dependencies"],
+                       parsed["tool"]["poetry"]["group"]["dev"]["dependencies"])
