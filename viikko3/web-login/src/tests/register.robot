@@ -43,7 +43,7 @@ Login After Succesfull Registration
     Continue after registering
     Logout
     Login Page Should Be Open
-    Set Username  jonne
+    Set Username  jonnez
     Set Password  kalle123
     Submit Login Credentials
     Main Page Should Be Open
